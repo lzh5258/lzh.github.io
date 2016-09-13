@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+	<title>技能条</title>
+<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+<script type="text/javascript">
+
+/*window.onload=function(){
+	var oCont=document.getElementById('cont');
+	var oList=oCont.getElementsByTagName('ul')[0].getElementsByTagName('list');
+	var oLi=document.getElementById('li2');
+	var iTarget=[0.7,0.5,0.4,0.3,0.2];
+   	
+   	for(i=0,i<oList.length;i++)
+   	{
+      timer(this);
+   	}
+     
+         timer=setInterval(function('obj') {
+		 var iSpeed=10;
+		 var iTarget=[0.7,0.5,0.4,0.3,0.2];
+			if (oList[i].offsetWidth<=oLi[i].offsetWidth* iTarget[i]) 
+			{
+				oList.style.width=oList.offsetWidth+iSpeed+'px';
+			}
+		
+	     },20);	
+}
+
+*/
+$(function(){
+    var oUl=$('ul');
+    var oLi=$('#li2');
+	var aim=oLi.outerWidth;
+	
+	$('#list1').animate({width:765*0.7},2000);
+
+	$('#list2').animate({width:765*0.65},2000);
+
+	$('#list3').animate({width:765*0.5},2000);
+
+	$('#list4').animate({width:765*0.5},2000);
+
+	$('#list5').animate({width:765*0.25},2000);
+
+
+});
+</script>
+<style type="text/css">
+*{margin:0px;
+padding:0px;
+}
+.cont{
+	width:80%;
+	height:400px;
+	background: #81c2d9;
+	border-radius: 10px;
+	margin:0 auto;
+}
+.cont ul{
+	
+	list-style: none;
+	padding-top: 40px;
+	
+}
+.cont ul li{
+    float: left;
+    margin-top: 20px;
+}
+.cont ul .li1{
+	width: 17%;
+	text-align: center;
+	font-family: 温软雅黑;
+	font-weight: 800;
+	font-size: 35px;
+	line-height: 20px;
+}
+.cont ul .li3{
+	width: 10%;
+	text-align: center;
+	font-family: 温软雅黑;
+	font-weight: 800;
+	font-size: 35px;
+	line-height: 20px;
+}
+.cont .ul1{
+color:#00b0f0;
+}
+.cont .ul2{
+color:#8192d6;
+}
+.cont .ul3{
+color:#dcf7a1;
+}
+.cont .ul4{
+color:#83fcd3;
+}
+.cont .ul5{
+color:#d9b3e6;
+}
+.cont ul .li2{
+	height: 20px;
+	width: 70%;
+	border:1px #fff solid;
+	border-radius:10px; 
+}
+.cont ul .li2 .list1{
+	height:20px;
+	width:0px;
+	background: #ccc;
+	border-radius: 9px;
+}
+.cont ul .li2 .list2{
+	height:20px;
+	width: 0px;
+	background: #ccc;
+	border-radius: 9px;
+}
+.cont ul .li2 .list3{
+	height:20px;
+	width: 0px;
+	background: #ccc;
+	border-radius: 9px;
+}
+.cont ul .li2 .list4{
+	height:20px;
+	width: 0px;
+	background: #ccc;
+	border-radius: 9px;
+}
+.cont ul .li2 .list5{
+	height:20px;
+	width: 0px;
+	background: #ccc;
+	border-radius: 9px;
+}
+
+}
+
+</style>
+</head>
+<body>
+<section class="cont" id="cont">
+	<ul class="ul1">
+		<li class="li1">html</li>
+		<li class="li2" id="li2" ><div class="list1" id="list1"></div></li>
+		<li class="li3">70%</li>
+	</ul><br>
+	<ul class="ul2">
+		<li class="li1">CSS</li>
+		<li class="li2" id="li2"><div class="list2" id="list2"></div></li>
+		<li class="li3">65%</li>
+	</ul><br>
+	<ul class="ul3">
+		<li class="li1">javascript</li>
+		<li class="li2" id="li2"><div class="list3" id="list3"></div></li>
+		<li class="li3">50%</li>
+	</ul><br>
+	<ul class="ul4">
+		<li class="li1">jQuery</li>
+		<li class="li2" id="li2"><div class="list4" id="list4"></div></li>
+		<li class="li3">35%</li>
+	</ul><br>
+	<ul class="ul5">
+		<li class="li1">angular</li>
+		<li class="li2" id="li2"><div class="list5" id="list5"></div></li>
+		<li class="li3">25%</li>
+	</ul><br>
+
+
+</section>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>自我介绍</title>
+<script type="text/javascript">
+
+	function leo(n){
+		var navUi=document.getElementById("m"+n);
+		if(navUi.style.display!="block"){
+		for(var i=0;i<=3;i++){
+			document.getElementById("m"+i).style.display="none";
+		}	
+		navUi.style.display="block";
+		}else{
+			navUi.style.display="none";	
+		}
+	}
+	function showpic (whichpic) {
+	var source=whichpic.getAttribute("href")
+	var placeholder=document.getElementById("placeholder");
+	placeholder.setAttribute("src",source);
+	var text=whichpic.getAttribute("title");
+	// body...
+}
+ 
+	
+</script>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<div class="container">
+<!-- 头部 -->
+    <div id="header">
+    <ul>
+    	<li>  <p id="logo">自我介绍</p></li>
+    	<li> <span>每天多学一点，就少写一行代码！</span></li>
+    	<li></li>
+    	<li><p id="net">微信：lzh131024&nbsp;&nbsp;邮箱:LZH5258@163.com</p></li>
+    </ul>
+ 
+    </div>
+<!-- 中间 -->
+    <div id="wrap">
+    <!-- 左部分 -->
+    <div id="L_block">
+    <div id="photo"><img src="images/头像.jpg"></div>
+	<!-- <ul id="nav">
+	   <li><a onclick="leo(0)" href="#" class="navLink">走过的路</a></li>
+	    <ul id="m0" class="menu">	
+	       <li><a href="#" class="menuLink">小学经历</a></li>
+	       <li><a href="#" class="menuLink">初中经历</a></li>
+	       <li><a href="#" class="menuLink">高中经历</a></li>
+	       <li><a href="#" class="menuLink">大学经历</a></li>
+        </ul>
+       <li><a onclick="leo(1)" href="#" class="navLink">见过的人</a></li>
+       <ul id="m1" class="menu">
+	       <li><a href="#" class="menuLink">亲人</a></li>
+	       <li><a href="#" class="menuLink">朋友</a></li>
+	       <li><a href="#" class="menuLink">同学</a></li>
+        </ul>
+        <li><a onclick="leo(2)" href="#" class="navLink">喜欢的东西</a></li>
+        <ul id="m2" class="	menu">
+	       <li><a href="#" class="menuLink">basketball</a></li>
+	       <li><a href="#" class="menuLink">billiard ball</a></li>
+	       <li><a href="#" class="menuLink">旅游</a></li>
+	       <li><a href="#" class="menuLink">摄影</a></li>
+        </ul>
+         <li><a onclick="leo(3)" href="#" class="navLink">最蠢的事</a></li>
+         <ul id="m3" class="menu">
+	       <li><a href="#" class="menuLink">和好友骑行</a></li>
+	       <li><a href="#" class="menuLink">表白被拒</a></li>
+	       <li><a href="#" class="menuLink">搭错车</a></li>
+        </ul>
+	</ul> -->
+    <div class="descript">
+    	<div class="item">
+    	—求职意向—<br>
+    		<span>web前端实习生</span>
+    	</div>
+    
+    </div>
+
+
+	<div id="cap">
+		<h3>个人简介</h3>
+<p>自学前端半年，能熟练运用html，css,对HTML5,CSS3的一些新特性有所了解;</p>
+<p>javascript语法基本掌握,对jQuery比较熟悉;</p>
+<p>熟练运用sublime,webstorm编程软件;</p>
+<p>熟悉asp.net mvc框架;</p>
+<p>掌握photoshop基本技巧，能够完成切图等工作;</p>
+<h3>在校经历</h3>
+<p>
+	2013-2014年：任院学生会干事;
+</p>
+<p>
+	2013-2017年：任班级组织委员;
+</p>
+<h3>曾获荣誉</h3>
+<p> 
+模范学生干部奖;
+</p><br>
+	</div>
+	</div>
+
+	
+    <!--中间部分-->
+
+	<div id="middle">
+		<h2 style="color:#000">刘志浩</h2><br>
+	<p>
+	 性别：男<br>
+	 出生日期：1994.10.18</br>
+	 毕业学校：西北师范大学(2013-2017)<br>
+     院系专业：商学院信息管理与信息系统</br>
+     最高学历：本科</br>
+     联系电话：18809462848
+    </p>
+
+    <p><h3 style="background-color:#333;">.作品展示</h3><br>
+    <ul id="imagegallary">
+<li>
+<a href="images/fireworks.jpg"  onmouseover="showpic(this);
+return false;" title="A fireworks display"><img src="images/Fireworks.1.jpg"/></a>
+<li>
+<a href="images/rose.jpg"  onmouseover="showpic(this);
+return false;" title="A red ,red rose "><img src="images/Rose.1.jpg"/></a>
+<li>
+<a href="images/coffee.jpg"  onmouseover="showpic(this);
+return false;" title="A cup of coffee"><img src="images/Coffee.1.jpg"/></a>
+<li>
+<a href="images/big ben.jpg"  onmouseover="showpic(this);
+return false;" title="the famous clock"><img src="images/Big Ben.1.jpg"/></a>
+<li>
+<a href="images/cat.jpg"  onmouseover="showpic(this);
+return false;" title="the famous clock"><img src="images/cat.1.jpg"/></a>
+</li>
+
+</ul>
+<img id="placeholder" src="images/rose.jpg" alt="my image gallery"/>
+<br><br><br><br><hr>
+    
+<div id="mark">
+<br><h2 style="background-color:#333;">.特长爱好</h2><br>
+<table>
+	<tr>
+		<td><a>打篮球</a></td>
+		<td>看动漫</td>
+		<td>LOL</td>
+		<td>撸代码</td>
+	</tr>
+	<tr>
+		<td>台球</td>
+		<td>旅行</td>
+		<td>看书</td>
+		<td>看电影</td>
+	</tr>
+	<tr>
+		<td>赖床</td>
+		<td>骑行</td>
+		<td>伪球迷</td>
+		<td>科蜜</td>
+	</tr>
+
+</table>
+</div>
+	</div>
+
+<!--右部分-->
+<div id="metro">
+	<img src="images/唱片.png">
+	<hr style="width:40%"><br>
+	<h2 style="color:#000" align="center" >-Music-</h2><br>
+	<hr style="width:20%"><br>
+<p align="center" color="#000">
+	In Pieces<br>
+	The Freedom Song<br>
+	Mad World<br>
+	Pree  &nbsp; Loop<br>
+	One Heart<br>
+	Breathless<br>
+	Just the Way You Are<br>
+	Treasure<br>
+	The World I See It<br>
+	geek in the pink<br>
+	Trespassing<br>
+</p>
+</div>
+
+</div>
+<!-- 尾部 -->
+	<div class="footer" id="footer">
+
+	<div class="po">
+    <div class="card">
+    	<img src="images/card1.png">
+    	<img src="images/card2.jpg">
+    </div>
+	</div>
+	<div class ="po">
+		<div class="co"><img src="images/con_icon1.png"><br><p>lzh131024</p></div>
+		<div class="co"><img src="images/con_icon2.png"><br><p>1578656270</p></div>
+		<div class="co"><img src="images/con_icon3.png"><br><p>LZH5258@163.com</p></div>
+	</div>
+</div>
+
+</div>
+</body>
+</html>
