@@ -88,7 +88,7 @@ ul,li{
 .descript .item{
 	margin: 0 auto;
     width:90%;
-	background-color: #00a2c2;
+	background-color: #00A2CA;
     padding: 20px 0px;
 	font-size:20px;
 	color:yellow;
@@ -100,7 +100,7 @@ ul,li{
 	font-size: 26px;
 	font-weight: bold;
 	color: #fafafa;
-	background-color: #373e40;
+	
 }
  #cap{
 
@@ -118,7 +118,7 @@ ul,li{
  }
 
 #middle{
-	     height: 758px;width:58%;
+	     height: 758px;width:57%;
 	     float:left;
          margin-left:20px;
 	     background:#f8f8f8;
@@ -228,17 +228,29 @@ color:#d9b3e6;
  	      padding:5px;text-align: center;
  	      cursor: pointer;font-family:Arial; }
  #mark td:hover{color: #008eff;font-size: 20px;}
- #metro{
- 	   width: 17%;height: 778px;
+ .metro{
+ 	   width: 18%;
+ 	   height: 778px;
         float: right;
  	    margin-right:0px;  
  	    border-radius: 2px;
- 	    background-image: url(../images/背景.jpeg);
- 	    background-size;height: 780px;
+ 	    background:#f8f8f8;
  	    box-shadow: 2px 2px 3px #ccc;
+ 	    border-left: 1px #eee solid;
  }
-  #metro img{width: 110%;height:165px;}
-  #metro p{color: #000;text-decoration:underline; line-height: 2em; }
+.metro .line{}
+.metro h2{margin:20px 0 0 20px;background:#333;text-align: center;width:80%; }
+.metro .block{width:95%;box-shadow: 0 0px 6px #666;background:#fff;margin:0 auto;position: relative;}
+
+.metro .item{height:50px; position:absolute;bottom:20px;background:rgba(255,255,255,1);overflow: hidden;z-index: 1000;width: 100%;}
+.metro .item a{text-decoration: none;color: green;}
+.metro .item2{height:20px;}
+.metro img{width: 90%;height:160px;margin:10px;margin-bottom: 70px;}
+.metro h5{color: #000; line-height: 2em;text-align: center;}
+.metro p{color: #000;font-size:14px;font-family: 黑体; line-height: 2em;margin-left: 10px; }
+.metro .item2 p{font-size: 12px;}
+.metro .msg{background:#ccc;word-wrap:normal;}
+.metro p{font-size: 10px;}
   .footer{
   	     position: absolute;
   	     top:850px;
@@ -272,4 +284,3 @@ color:#d9b3e6;
   width:50px;
   height:48px;
   }
-  
