@@ -11,7 +11,7 @@ html,body {
 a{
 	text-decoration: none;
 }
-li{
+ul,li{
 	list-style: none;
 }
 .container{min-height:100%;position:absolute;width: 100%;}
@@ -19,18 +19,20 @@ li{
  #header li{float: left;}
  #logo{font-size: 35px;margin:8px 0px 8px 60px;}
  #header span{font-size: 20px;float:left;line-height: 60px;margin-left: 20px;}
- #net{position:absolute; top:20px;right:20px;}
+ #net{position:absolute; top:0px;right:20px;}
  #wrap{width:90%;margin:0 auto;position:relative;top:80px;height: 100%;}
 
 #L_block{
     border-left:1px #ccc solid;
 	width: 20%;
-	height:100%;
+	height:778px;
 	float: left;
 	box-shadow: 2px 2px 3px #ccc;
 	background-color: #f8f8f8;
 }
-
+#L_block h3{
+	margin-left: 10px;
+}
  #photo{ 
  	     margin:0 auto;
  	     width:80%;
@@ -101,6 +103,7 @@ li{
 	background-color: #373e40;
 }
  #cap{
+
  	margin-top: 15px;
  	width: 100%;
  	background-color: #fafafa;
@@ -132,8 +135,93 @@ li{
  	     background-color: #333;
  }
  h2{font-family: cursive;}
- #imagegallary li{float:left;padding:1em;list-style: none}
- #imagegallary #placeholder{width: 200px;height:100px;}
+ /*#imagegallary li{float:left;padding:1em;list-style: none}
+ #imagegallary #placeholder{width: 200px;height:100px;}*/
+ .cont{
+	width:100%;
+	height:300px;
+	background: #81c2d9;
+	border-radius: 10px;
+	margin:0 auto;
+}
+.cont ul{
+	
+	list-style: none;
+	
+}
+.cont ul li{
+    float: left;
+    margin-top: 20px;
+}
+.cont ul .li1{
+	width: 17%;
+	text-align: center;
+	font-family: 温软雅黑;
+	font-weight: 800;
+	font-size: 20px;
+	line-height: 16px;
+}
+.cont ul .li3{
+	width: 10%;
+	text-align: center;
+	font-family: 温软雅黑;
+	font-weight: 800;
+	font-size: 26px;
+	line-height: 16px;
+}
+.cont .ul1{
+color:#00b0f0;
+}
+.cont .ul2{
+color:#8192d6;
+}
+.cont .ul3{
+color:#dcf7a1;
+}
+.cont .ul4{
+color:#83fcd3;
+}
+.cont .ul5{
+color:#d9b3e6;
+}
+.cont ul .li2{
+	height: 16px;
+	width: 70%;
+	border:1px #fafafa solid;
+	border-radius:8px; 
+
+}
+.cont ul .li2 .list1{
+	height:16px;
+	width:0px;
+	background: #fafafa;
+	border-radius: 8px;
+
+}
+.cont ul .li2 .list2{
+	height:16px;
+	width: 0px;
+	background: #fafafa;
+	border-radius: 8px;
+}
+.cont ul .li2 .list3{
+	height:16px;
+	width: 0px;
+	background: #fafafa;
+	border-radius: 8px;
+}
+.cont ul .li2 .list4{
+	height:16px;
+	width: 0px;
+	background: #fafafa;
+	border-radius: 8px;
+}
+.cont ul .li2 .list5{
+	height:16px;
+	width: 0px;
+	background: #fafafa;
+	border-radius: 8px;
+}
  #mark{margin:0 auto;}
  #mark td{vertical-align:baseline;
  	      width: 140px;height: 20px;color: #226eff;font-size:19px;
@@ -155,7 +243,7 @@ li{
   	     position: absolute;
   	     top:850px;
   	      width:100%;
-  	      height:180px;
+  	      height:170px;
   	      background: #3b3b3b;
   	      margin-top: 20px;
   	  }

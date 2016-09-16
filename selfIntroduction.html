@@ -3,9 +3,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>自我介绍</title>
-<script type="text/javascript">
+<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
 
-	function leo(n){
+<script type="text/javascript">
+/*图片展播*/
+	/*function leo(n){
 		var navUi=document.getElementById("m"+n);
 		if(navUi.style.display!="block"){
 		for(var i=0;i<=3;i++){
@@ -20,9 +22,26 @@
 	var source=whichpic.getAttribute("href")
 	var placeholder=document.getElementById("placeholder");
 	placeholder.setAttribute("src",source);
-	var text=whichpic.getAttribute("title");
-	// body...
-}
+	var text=whichpic.getAttribute("title");*/
+	// 技能条...
+	$(function(){
+    var oUl=$('ul');
+    var oLi=$('#li2');
+	var aim=oLi.outerWidth;
+	
+	$('#list1').animate({width:485*0.7},2000);
+
+	$('#list2').animate({width:485*0.65},2000);
+
+	$('#list3').animate({width:485*0.5},2000);
+
+	$('#list4').animate({width:485*0.5},2000);
+
+	$('#list5').animate({width:485*0.25},2000);
+
+
+});
+
  
 	
 </script>
@@ -36,7 +55,7 @@
     	<li>  <p id="logo">自我介绍</p></li>
     	<li> <span>每天多学一点，就少写一行代码！</span></li>
     	<li></li>
-    	<li><p id="net">微信：lzh131024&nbsp;&nbsp;邮箱:LZH5258@163.com</p></li>
+    	<li><p id="net"><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="http://music.163.com/outchain/player?type=2&id=26679470&auto=1&height=32"></iframe></p></li>
     </ul>
  
     </div>
@@ -117,8 +136,8 @@
      联系电话：18809462848
     </p>
 
-    <p><h2 style="background-color:#333;">.作品展示</h2><br>
-    <ul id="imagegallary">
+    <p><h2 style="background-color:#333;">.专业技能</h2><br>
+    <!-- <ul id="imagegallary">
 <li>
 <a href="images/fireworks.jpg"  onmouseover="showpic(this);
 return false;" title="A fireworks display"><img src="images/Fireworks.1.jpg"/></a>
@@ -138,7 +157,36 @@ return false;" title="the famous clock"><img src="images/cat.1.jpg"/></a>
 
 </ul>
 <img id="placeholder" src="images/rose.jpg" alt="my image gallery"/>
-<br><hr>
+<br><hr> -->
+<section class="cont" id="cont">
+	<ul class="ul1">
+		<li class="li1">html</li>
+		<li class="li2" id="li2" ><div class="list1" id="list1"></div></li>
+		<li class="li3">70%</li>
+	</ul><br>
+	<ul class="ul2">
+		<li class="li1">CSS</li>
+		<li class="li2" id="li2"><div class="list2" id="list2"></div></li>
+		<li class="li3">65%</li>
+	</ul><br>
+	<ul class="ul3">
+		<li class="li1">javascript</li>
+		<li class="li2" id="li2"><div class="list3" id="list3"></div></li>
+		<li class="li3">50%</li>
+	</ul><br>
+	<ul class="ul4">
+		<li class="li1">jQuery</li>
+		<li class="li2" id="li2"><div class="list4" id="list4"></div></li>
+		<li class="li3">35%</li>
+	</ul><br>
+	<ul class="ul5">
+		<li class="li1">angular</li>
+		<li class="li2" id="li2"><div class="list5" id="list5"></div></li>
+		<li class="li3">25%</li>
+	</ul><br>
+
+
+</section>
     
 <div id="mark">
 <br><h2 style="background-color:#333;">.特长爱好</h2><br>
