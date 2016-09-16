@@ -249,7 +249,7 @@ color:#d9b3e6;
   	  }
    .footer .po{
    	height:100px;
-   	width: 35%;
+   	width: 40%;
    	float: left;
    	margin-left: 20px;
    	margin-top: 20px;
@@ -267,7 +267,9 @@ color:#d9b3e6;
   	float: left;
   	margin-left: 50px;
   }
+
   .po .co img{
   width:50px;
   height:48px;
   }
+  
